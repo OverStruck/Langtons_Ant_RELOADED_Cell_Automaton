@@ -1,0 +1,78 @@
+
+html {
+    color: rgb(198, 226, 248);
+    background-color: rgb(27, 27, 27);
+    font-family:monospace
+}
+
+#app
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#defaultCanvas0 {
+    background-color: #404040;
+}
+
+#interface 
+{
+    display: flex;
+    flex-direction: column;
+    order:2;
+    margin: 10px;
+    width: 500px;
+}
+
+#interfaceContainer
+{
+    display:grid;
+    grid-template-rows: max-content max-content;
+}
+
+#interfaceContainer .controls
+{
+    display: inline-grid;
+    justify-content: start;
+    grid-template-columns: 100px auto auto auto auto;
+    grid-gap: 5px;
+}
+
+.buttons {
+    margin-top: 5px;
+}
+
+#console
+{
+    margin-top: 30px;
+    padding: 10px;
+    height: 400px;
+    width: 100%;
+    background-color: black;
+    font-size: small;
+    overflow-y:auto;
+}
+
+#counter
+{
+    padding: 10px;
+    height: 30px;
+    background-color: black;
+    color:greenyellow;
+    font-size: larger;
+    width: 100%;
+}
+
+.loggerLine
+{
+    display: block;
+}
+
+#themeContainer {
+    display: inline-flex;
+}
+
+.themeColor {
+    width: 20px;
+    background-color: red;
+}

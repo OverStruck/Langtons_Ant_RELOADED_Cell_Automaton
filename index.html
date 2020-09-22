@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+    <head>
+        <title>Modified Langton's Ant Lab</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body id="app">
+        <div id="interface">
+            <div id="interfaceContainer">
+                <div class="controls">
+                        <label for="antNum">Ant Number </label>
+                        <input id="antNum" name="antNum" type="text" maxlength="2" size="4" placeholder="15 (Hex)">
+                        <input id="btnSetAntNum" type="button" value="Set Number">
+                </div>
+                <div class="controls">
+                        <label for="frameRate">Frame Rate </label>
+                        <input id="frameRate" name="frameRate" type="text" maxlength="4" size="4" placeholder="1" min="1" step="1" onkeyup="if(this.value<1){this.value= this.value * -1}">
+                        <input id="btnSetFPS" type="button" value="Set FPS">
+                </div>
+                <div class="controls">
+                        <label for="cellSize">Cell Size </label>
+                        <input id="cellSizeInput" name="cellSize" type="text" maxlength="2" size="4" placeholder="15 (pixels)" min="1" step="1" onkeyup="if(this.value<0){this.value= this.value * -1}">
+                        <input id="btnSetCellSize" type="button" value="Set Cell Size">
+                </div>
+                <div class="controls">
+                        <label for="gridSize">Grid Size </label>
+                        <input id="gridSizeInputW" name="gridSize" type="text" maxlength="4" size="4" placeholder="Width:41" onkeyup="if(this.value<0){this.value= this.value * -1}">
+                        <input id="gridSizeInputH" name="gridSize" type="text" maxlength="4" size="4" placeholder="Height:41" onkeyup="if(this.value<0){this.value= this.value * -1}">
+                        <input id="btnSetGridSize" type="button" value="Set Grid Size">
+                </div>
+                <div class="controls">
+                    <label for="theme">Theme:</label>
+                    <select name="theme" id="theme">
+                        <option value="0">Default</option>
+                        <option value="1">Dark</option>
+                        <option value="2">Green</option>
+                        <option value="3">Neon</option>
+                        <option value="4">Soft Beach</option>
+                        <option value="5">Puple</option>
+                        <option value="6">Dual</option>
+                    </select>
+                    <div id="themeContainer">
+                        <div class="themeColor"></div>
+                        <div class="themeColor"></div>
+                        <div class="themeColor"></div>  
+                        <div class="themeColor"></div>
+                        <div class="themeColor"></div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <span>Other:</span>  
+                    <label for="debug">Debug</label>
+                    <input type="checkbox" name="debug" id="debug">
+                    <label for="logAll">Log All</label>
+                    <input type="checkbox" name="logAll" id="logAll">
+                </div>
+                <div class="controls buttons">
+                        <input id="btnToggle" type="button" value="Start">
+                        <input id="btnClear" type="button" value="Clear Console">
+                        <input id="btnReset" type="button" value="Reset">
+                        <input id="btnSavePic" type="button" value="Save Picture">
+                </div>
+
+                <div id="console"></div>
+                <div id="counter"></div>
+            </div>
+        </div>
+
+        <script src="p5.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+
+</html>
