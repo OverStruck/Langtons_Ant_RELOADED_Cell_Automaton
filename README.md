@@ -15,6 +15,7 @@ Initially, the grid is all black and the Ant is in the center cell, heading Nort
 For an Ant with number: #0x15 (hex), the binary number is 10101 (21 decimal)
 In this case, the Ant turning states (behavior) is LRLRL, where a binary 1 bit means turn Left, and a 0 means turn Right.
 Each cell has 5 states, one for each binary digit position in the 5 bits (10101). Each state is represented on the grid by a color (for easy visuals), with the color/state sequence (from low bit to high bit) being Black=0 → Red=1 → Yellow=2 → Blue=3 → Green=4 → Black=0 (wrapped), etc. 
+
 Hence, Ant #0x15 turns Right on Red or Blue, and else Left.
 
 ### Example (Ant #0x15) 
