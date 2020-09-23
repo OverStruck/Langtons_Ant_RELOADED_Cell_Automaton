@@ -3,6 +3,8 @@ This project implements [Langton's Ant](https://en.wikipedia.org/wiki/Langton%27
 
 The program is written in [P5.js](https://p5js.org/) + vanilla Javascript with an HTML web page for display.
 
+Use this program live here: https://overstruck.github.io/Langtons_Ant_RELOADED_Cell_Automaton/
+
 # Description
 The Ant will be shown in a 2D grid of black, red, yellow, blue, and green cells; initially all are black.
 The Ant crawl on a 2D grid where each cell has a color (initially all are black). As an Ant crawls, it first notices the color of the cell it is on and then changes its direction/heading based on this color, after that, it "increments" the color of the cell under it to the next color in sequence (wrapping around if needed), and finally moves one cell in its new direction (wrapping around on the grid if needed).
