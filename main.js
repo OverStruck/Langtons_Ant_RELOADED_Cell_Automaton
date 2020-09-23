@@ -1,3 +1,8 @@
+/*
+	Author: github.com/overstruck
+    Use this application live at: https://overstruck.github.io/Langtons_Ant_RELOADED_Cell_Automaton/"
+*/
+
 
 'use_strict'
 /*
@@ -725,7 +730,7 @@ btnSavePic.addEventListener('click', function() {
 
 	textBox.stroke(0);
 	textBox.fill(255);
-	textBox.text("Modified Langton's Ant pattern", x, y);
+	textBox.text("Langton's with multiple colors", x, y);
 	textBox.text("Ant number: " + antNum, x, (y+=15));
 	textBox.text("Cell size: " + app.grid.cellSize + " pixels", x, (y+=15));
 	textBox.text("Grid size: " + app.grid.width + " x " + app.grid.height + " cells", x, (y+=15));
@@ -733,10 +738,19 @@ btnSavePic.addEventListener('click', function() {
 	textBox.text("Date: " + month() + "/" + day() + "/" + year(), x, (y+=15));
 
 	imgCanvas.image(textBox, 0,0);
+
+	let textBox2 = createGraphics(500, 100);
+	textBox2.stroke(0);
+	textBox2.fill(255);
+	textBox2.textSize(10)
+	textBox2.text("Explore more patterns at:", 0, 10);
+	textBox2.text("https://overstruck.github.io/Langtons_Ant_RELOADED_Cell_Automaton/", 0, 20);
+
+	imgCanvas.image(textBox2, app.config.canvasW - 340, app.config.canvasH - 30);
 	
 	let gridSize = `${app.grid.width}_x_${app.grid.height}`
 	let timeStamp = `${hour()}_${minute()}_${second()}`;
-	let fileName = `Modified_Langton_s_ant_${gridSize}_grid_${timeStamp}`
+	let fileName = `Langton_s_ant_RELOADED_${gridSize}_grid_${timeStamp}`
 
 	saveCanvas(imgCanvas, fileName, 'jpg');
 
