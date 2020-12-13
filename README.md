@@ -5,6 +5,8 @@ The program is written in [P5.js](https://p5js.org/) + vanilla Javascript with a
 
 Use this program live here: https://overstruck.github.io/Langtons_Ant_RELOADED_Cell_Automaton/
 
+This project aims to provide a fun and interactive way to explore the patterns produced by Langton's Ant with multiple colors.
+
 # Description
 The Ant will be shown in a 2D grid of black, red, yellow, blue, and green cells; initially all are black.
 The Ant crawl on a 2D grid where each cell has a color (initially all are black). As an Ant crawls, it first notices the color of the cell it is on and then changes its direction/heading based on this color, after that, it "increments" the color of the cell under it to the next color in sequence (wrapping around if needed), and finally moves one cell in its new direction (wrapping around on the grid if needed).
@@ -27,8 +29,6 @@ Ant Number | Corresponding Turn (behavior) | Color Sequence
 1 | LEFT | Yellow
 0 | RIGHT | Blue
 1 | LEFT | Green
-
-This project aims to provide a fun and interactive way to explore the patterns produced by Langton's Ant with multiple colors.
 
 # Examples
 
